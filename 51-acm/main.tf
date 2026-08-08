@@ -1,4 +1,4 @@
-resource "aws_acm_certificate" "mrmotam" {
+resource "aws_acm_certificate" "main" {
   domain_name  = "*.mrmotam.online"
   validation_method = "DNS"
 
