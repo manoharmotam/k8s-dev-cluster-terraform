@@ -2,12 +2,12 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "6.52.0"
+      version = "6.48.0"
     }
   }
   backend "s3" {
     bucket       = "manoharmotam-remote-state-dev"
-    key          = "k8s-dev-cluster.tfstate"
+    key          = "access-entries.tfstate"
     region       = "us-east-1"
     use_lockfile = true
     encrypt      = true
