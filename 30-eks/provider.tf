@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
     bucket       = "manoharmotam-remote-state-dev"
-    key          = "k8s-dev-cluster-bastion.tfstate"
+    key          = "k8s-dev-cluster.tfstate"
     region       = "us-east-1"
     use_lockfile = true
     encrypt      = true
